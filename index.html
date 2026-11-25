@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informática V. Industria del Software | Raziel Eliud Sánchez Romero</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="institution-badge">UNAM &bull; Facultad de Estudios Superiores Cuautitlán (FESC) Campo 4</span>
+      <h1>Informática V. Industria del Software</h1>
+      <p class="site-subtitle">
+        Este portal académico contiene el desarrollo completo y resuelto del temario de la asignatura
+        <strong>Informática V. Industria del Software</strong>, elaborado por
+        <strong>Raziel Eliud Sánchez Romero</strong> &bull; <strong>Grupo:</strong> 1501 &bull;
+        <strong>Número de cuenta:</strong> 322063908-1.
+      </p>
+    </div>
+  </header>
+
+  <div class="main-wrapper">
+    <main class="main-column">
+      <article class="card">
+        <div class="post-date">Licenciatura en Informática &bull; Quinto Semestre &bull; Grupo 1501</div>
+        <h2 class="post-title">Desarrollo de Temario Resuelto</h2>
+        <div class="post-intro">
+          Para consultar el desarrollo teórico completo de cada unidad, tema o subtema, <strong>haz clic directamente sobre su título</strong> para desplegar su contenido. Al final de la página se enlistan las fuentes bibliográficas y cibergrafías consultadas.
+        </div>
+
+        <!-- UNIDAD 1 -->
+        <details class="unit-block" id="unidad-1" open>
+          <summary>1. Gestión de la Calidad</summary>
+          <div class="unit-content">
+            <p class="unit-overview">
+              La <strong>Gestión de la Calidad del Software</strong> comprende el conjunto de actividades planificadas, sistemáticas y documentadas dentro de una organización de ingeniería para asegurar que tanto los procesos de desarrollo como los productos de software resultantes cumplan con los requisitos explícitos del cliente, las expectativas implícitas de los usuarios y los estándares internacionales de la industria.
+            </p>
+
+            <!-- 1.1 -->
+            <details class="subtopic-block" id="tema-1-1">
+              <summary>1.1 Calidad</summary>
+              <div class="subtopic-body">
+                <p>
+                  En el ámbito de la ingeniería de software, el concepto de calidad ha sido formalizado por diversos autores y organismos internacionales para transformar una noción subjetiva en un atributo verificable y medible:
+                </p>
+                <ul>
+                  <li><strong>Norma ISO 9000:</strong> Define la calidad como el <em>"grado en que un conjunto de características inherentes cumple con los requisitos"</em>, entendiendo por requisito toda necesidad o expectativa establecida, generalmente implícita u obligatoria.</li>
+                  <li><strong>Roger S. Pressman:</strong> Define la calidad del software como la <em>"concordancia con los requisitos funcionales y de rendimiento explícitamente establecidos, con los estándares de desarrollo explícitamente documentados y con las características implícitas que se espera de todo software desarrollado profesionalmente"</em>.</li>
+                  <li><strong>Estándar IEEE 610.12:</strong> La concibe como el grado en que un sistema, componente o proceso cumple con los requisitos especificados y con las necesidades o expectativas del cliente o usuario final.</li>
+                  <li><strong>Enfoques clásicos (Juran, Crosby y Deming):</strong> Joseph Juran la resume como <em>"adecuación al uso"</em>; Philip Crosby como <em>"cumplimiento de los requisitos"</em> bajo el principio de cero defectos; y W. Edwards Deming la vincula con la mejora continua del proceso mediante el ciclo PHVA (Planificar, Hacer, Verificar, Actuar).</li>
+                </ul>
+
+                <h4>Perspectivas de la Calidad del Software</h4>
+                <ul>
+                  <li><strong>Calidad del proceso:</strong> Evalúa la madurez, disciplina y repetibilidad de las metodologías, herramientas y prácticas empleadas para construir el software. Parte de la premisa de que un proceso controlado y estandarizado reduce la variabilidad y produce sistemas confiables.</li>
+                  <li><strong>Calidad del producto (Estándar ISO/IEC 25010):</strong> Evalúa las propiedades intrínsecas y observables del software terminado a través de ocho características principales: <em>adecuación funcional, eficiencia de desempeño, compatibilidad, usabilidad, fiabilidad, seguridad, mantenibilidad y portabilidad</em>.</li>
+                </ul>
+
+                <h4>Economía y Costos de la Calidad</h4>
+                <p>
+                  Invertir tempranamente en calidad reduce el costo total del ciclo de vida del sistema. Los costos se clasifican en cuatro categorías:
+                </p>
+                <ul>
+                  <li><strong>Costos de prevención:</strong> Capacitación del personal, definición de estándares de codificación, planificación de calidad y revisiones técnicas tempranas.</li>
+                  <li><strong>Costos de evaluación:</strong> Ejecución de pruebas unitarias, de integración, inspecciones de código y auditorías de proceso.</li>
+                  <li><strong>Costos por fallas internas:</strong> Retrabajo, depuración y repruebas derivadas de defectos detectados antes de entregar el software al cliente.</li>
+                  <li><strong>Costos por fallas externas:</strong> Atención a incidentes en producción, parches de emergencia, penalizaciones contractuales por incumplimiento de SLA, demandas legales y pérdida de reputación comercial.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- 1.2 -->
+            <details class="subtopic-block" id="tema-1-2">
+              <summary>1.2 Revisiones y auditorías</summary>
+              <div class="subtopic-body">
+                <p>
+                  Las revisiones y auditorías son actividades estáticas de <strong>Aseguramiento de la Calidad del Software (SQA)</strong> cuyo propósito es examinar artefactos y procesos sin ejecutar el código, permitiendo detectar defectos en fases tempranas (análisis y diseño), donde su corrección cuesta hasta 100 veces menos que en producción.
+                </p>
+
+                <h4>Tipos de Revisiones Técnicas (Estándar IEEE 1028)</h4>
+                <ul>
+                  <li><strong>Revisiones Técnicas Formales (RTF):</strong> Reuniones estructuradas de ingeniería dirigidas a descubrir errores funcionales, lógicos o de omisión en productos de trabajo (especificación de requisitos SRS, arquitectura, código fuente, planes de prueba) y verificar su apego a los estándares.</li>
+                  <li><strong>Recorridos (<em>Walkthroughs</em>):</strong> Revisión semiestructurada en la que el autor del artefacto presenta y explica paso a paso su trabajo ante un grupo de pares para obtener retroalimentación técnica, validar supuestos y detectar inconsistencias de diseño.</li>
+                  <li><strong>Inspecciones de Software (Método Fagan):</strong> Proceso altamente formal y riguroso basado en listas de verificación (<em>checklists</em>) y roles definidos: <em>Moderador</em> (dirige la sesión), <em>Autor</em> (creador del artefacto), <em>Lector</em> (parafrasea el documento línea por línea), <em>Inspectores</em> (buscan defectos) y <em>Registrador</em> (documenta hallazgos y métricas).</li>
+                  <li><strong>Revisión por pares (<em>Peer Review / Pull Request</em>):</strong> Evaluación continua e incremental de fragmentos de código antes de integrarlos a la rama principal de un repositorio.</li>
+                </ul>
+
+                <h4>Auditorías de Calidad del Software</h4>
+                <p>
+                  Una <strong>auditoría</strong> es una evaluación independiente, objetiva y sistemática realizada por auditores internos o externos ajenos al equipo de desarrollo, con el fin de verificar el cumplimiento de normativas, contratos y procedimientos institucionales.
+                </p>
+                <table class="info-table">
+                  <thead>
+                    <tr>
+                      <th>Criterio</th>
+                      <th>Revisión Técnica</th>
+                      <th>Auditoría de Calidad</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Objetivo principal</strong></td>
+                      <td>Detectar defectos técnicos en artefactos de software.</td>
+                      <td>Verificar cumplimiento de procesos, normas (ISO/CMMI) y contratos.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Participantes</strong></td>
+                      <td>Ingenieros y pares técnicos del mismo proyecto.</td>
+                      <td>Auditores independientes internos o externos acreditados.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Destinatario del informe</strong></td>
+                      <td>El autor y el equipo técnico de desarrollo.</td>
+                      <td>Alta dirección, comité de calidad o el cliente contratante.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+
+            <!-- 1.3 -->
+            <details class="subtopic-block" id="tema-1-3">
+              <summary>1.3 Tipos de Pruebas</summary>
+              <div class="subtopic-body">
+                <p>
+                  Las <strong>pruebas de software</strong> son un proceso dinámico que consiste en ejecutar un programa con conjuntos de datos controlados para verificar que cumple sus especificaciones (<em>Verificación: "¿Construimos el producto correctamente?"</em>) y satisface las necesidades reales del usuario (<em>Validación: "¿Construimos el producto correcto?"</em>).
+                </p>
+
+                <h4>1. Clasificación por Nivel de Prueba (Modelo en V)</h4>
+                <ul>
+                  <li><strong>Pruebas Unitarias:</strong> Evalúan de forma aislada los módulos individuales más pequeños del software (funciones, métodos, clases o procedimientos), empleando objetos simulados (<em>mocks</em> y <em>stubs</em>) para aislar dependencias externas.</li>
+                  <li><strong>Pruebas de Integración:</strong> Verifican las interfaces, protocolos de comunicación y flujo de datos entre módulos acoplados. Sus estrategias principales son: <em>Big Bang</em> (todos a la vez), <em>Top-Down</em> (descendente con stubs), <em>Bottom-Up</em> (ascendente con drivers) y <em>Sándwich</em> (híbrida).</li>
+                  <li><strong>Pruebas de Sistema:</strong> Evalúan el sistema completo e integrado en un entorno equivalente al de producción para comprobar el cumplimiento integral de los requisitos funcionales y no funcionales.</li>
+                  <li><strong>Pruebas de Aceptación:</strong> Validan la preparación operativa del software junto al cliente o usuario final; incluyen <em>Pruebas Alfa</em>, <em>Pruebas Beta</em> y <em>Pruebas de Aceptación del Usuario (UAT)</em>.</li>
+                </ul>
+
+                <h4>2. Clasificación por Técnica de Diseño de Casos de Prueba</h4>
+                <ul>
+                  <li><strong>Pruebas de Caja Blanca (Estructurales):</strong> Se diseñan examinando la lógica interna y el código fuente. Buscan alcanzar porcentajes de cobertura de sentencias, ramas, decisiones y caminos independientes, apoyándose en la <strong>Complejidad Ciclomática de McCabe</strong>:
+                    <div class="formula-box">V(G) = E - N + 2P &nbsp;&nbsp;&bull;&nbsp;&nbsp; V(G) = Nodos predicado + 1</div>
+                  </li>
+                  <li><strong>Pruebas de Caja Negra (Funcionales):</strong> Tratan al sistema como una unidad opaca evaluando entradas y salidas sin conocer el código interno. Utilizan técnicas como <em>Partición de Equivalencia</em>, <em>Análisis de Valores Límite</em>, <em>Tablas de Decisión</em> y <em>Pruebas de Transición de Estados</em>.</li>
+                  <li><strong>Pruebas de Caja Gris:</strong> Combinan el conocimiento parcial de la arquitectura interna (como esquemas de base de datos o APIs) con pruebas funcionales desde la interfaz.</li>
+                </ul>
+
+                <h4>3. Clasificación por Atributos No Funcionales y Mantenimiento</h4>
+                <ul>
+                  <li><strong>Pruebas de Rendimiento, Carga y Estrés:</strong> Miden tiempos de respuesta y latencia bajo carga esperada (<em>carga</em>), comportamiento al llevar el sistema más allá de su capacidad máxima (<em>estrés</em>) y estabilidad prolongada (<em>resistencia o soak testing</em>).</li>
+                  <li><strong>Pruebas de Seguridad:</strong> Detectan vulnerabilidades de inyección SQL, XSS, fallos de autenticación, control de acceso y cifrado (alineadas con OWASP Top 10).</li>
+                  <li><strong>Pruebas de Usabilidad y Accesibilidad:</strong> Evalúan la facilidad de aprendizaje, eficiencia de navegación y cumplimiento de pautas WCAG.</li>
+                  <li><strong>Pruebas de Humo (<em>Smoke Testing</em>) y Sanidad:</strong> Verifican rápidamente que las funciones críticas de una nueva compilación operan antes de iniciar pruebas exhaustivas.</li>
+                  <li><strong>Pruebas de Regresión:</strong> Reejecutan suites de prueba automatizadas después de modificar o corregir el código para garantizar que no se hayan introducido efectos colaterales en módulos previamente funcionales.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- 1.4 -->
+            <details class="subtopic-block" id="tema-1-4">
+              <summary>1.4 Mecanismos de calidad de Software</summary>
+              <div class="subtopic-body">
+                <p>
+                  De acuerdo con <strong>Juran (1992)</strong>, para que la calidad del software pueda comprenderse con claridad y medirse de manera eficaz, debe traducirse en factores concretos comprensibles tanto para los usuarios como para los ingenieros que administran la tecnología. Estos factores se dividen en dos grandes categorías: los que se <strong>miden directamente</strong> (como los defectos descubiertos durante las pruebas) y los que se <strong>evalúan de forma indirecta</strong> (como la facilidad de uso o de mantenimiento), comparando siempre los resultados contra un conjunto de datos de referencia.
+                </p>
+
+                <h4>Modelo de Factores de Calidad de McCall, Richards y Walters (1977)</h4>
+                <p>
+                  Propone una taxonomía que organiza los factores que inciden directamente en la calidad del software alrededor de tres ejes estratégicos: <strong>1) Características operativas</strong>, <strong>2) Capacidad para experimentar cambios</strong> y <strong>3) Capacidad para adaptarse a nuevos entornos</strong>:
+                </p>
+                <ul>
+                  <li><strong>Corrección:</strong> Grado en que el programa cumple con su especificación y satisface los objetivos propuestos por el cliente.</li>
+                  <li><strong>Confiabilidad:</strong> Grado en que se espera que un programa desempeñe su función con la precisión requerida.</li>
+                  <li><strong>Eficiencia:</strong> Cantidad de código y de recursos de cómputo necesarios para que un programa realice su función.</li>
+                  <li><strong>Integridad:</strong> Grado de control sobre el acceso al software o a los datos por parte de personas no autorizadas.</li>
+                  <li><strong>Facilidad de uso:</strong> Esfuerzo necesario para aprender, operar y preparar los datos de entrada de un programa e interpretar su salida.</li>
+                  <li><strong>Facilidad de mantenimiento:</strong> Esfuerzo necesario para localizar y corregir un error en un programa.</li>
+                  <li><strong>Flexibilidad:</strong> Esfuerzo requerido para modificar un programa operativo.</li>
+                  <li><strong>Portabilidad:</strong> Esfuerzo necesario para transferir el programa de un entorno de hardware o software a otro.</li>
+                  <li><strong>Facilidad de reutilización:</strong> Grado en que un programa o partes de él pueden reutilizarse en otras aplicaciones, en relación con su empaquetamiento y alcance funcional.</li>
+                  <li><strong>Interoperabilidad:</strong> Esfuerzo necesario para acoplar un sistema con otro.</li>
+                </ul>
+
+                <h4>Modelo de Calidad de Vega et al. (2008)</h4>
+                <p>
+                  Dado que varias métricas del modelo de McCall suelen evaluarse subjetivamente mediante listas de comprobación (<em>checklists</em>) para asignar graduaciones, <strong>Vega et al. (2008)</strong> propusieron un modelo validado empíricamente en proyectos reales de desarrollo. Conserva los diez factores anteriores —precisando la <em>flexibilidad</em> como el esfuerzo para modificar un producto una vez liberado en producción y la <em>reusabilidad</em> aún cuando cambie la funcionalidad de la aplicación destino— e incorpora formalmente un decimoprimer factor:
+                </p>
+                <ul>
+                  <li><strong>Facilidad de prueba (<em>Testability</em>):</strong> Esfuerzo requerido para probar un producto de software de tal forma que se asegure que realiza las funciones especificadas por el usuario.</li>
+                </ul>
+
+                <h4>Medidas, Métricas e Indicadores</h4>
+                <ul>
+                  <li><strong>Medida:</strong> Asignación cuantitativa de números o símbolos a atributos de entidades reales (extensión, tamaño, capacidad o cantidad) mediante la recopilación de uno o más puntos de datos.</li>
+                  <li><strong>Métrica de software:</strong> Relación matemática entre medidas individuales que permite cuantificar un atributo específico del producto o del proceso de desarrollo.</li>
+                  <li><strong>Indicador:</strong> Métrica o combinación de métricas que aporta conocimiento accionable sobre el proceso, el proyecto o el producto, permitiendo a los ingenieros realizar ajustes para mejorar la calidad.</li>
+                </ul>
+                <p>
+                  Toda métrica de producto debe cumplir tres propósitos técnicos: ayudar a evaluar los modelos de análisis y diseño, ofrecer una indicación objetiva de la complejidad de los diseños procedimentales y del código fuente, y facilitar el diseño de casos de prueba más efectivos.
+                </p>
+
+                <h4>Proceso de Medición y Principios de Validación (Roche, Lethbridge y Ejiogu)</h4>
+                <p>
+                  <strong>Roche (1994)</strong> establece cinco actividades primordiales en el proceso de medición del software: <strong>1) Formulación</strong> (derivación de medidas y métricas apropiadas), <strong>2) Recolección</strong> (mecanismo de acumulación de datos), <strong>3) Análisis</strong> (cálculo y aplicación de herramientas matemáticas), <strong>4) Interpretación</strong> (evaluación de la calidad obtenida) y <strong>5) Retroalimentación</strong> (recomendaciones transmitidas al equipo). Además, sugiere automatizar la recolección y el análisis, aplicar técnicas estadísticas válidas y establecer guías claras de interpretación.
+                </p>
+                <p>
+                  <strong>Lethbridge (2003)</strong> señala que toda métrica válida debe poseer propiedades matemáticas deseables (rangos significativos, por ejemplo de 0 a 1 en escala racional), aumentar o disminuir en el mismo sentido que el atributo medido, validarse empíricamente en múltiples contextos y ser independiente de lenguajes de programación específicos. Complementariamente, <strong>Ejiogu (1991)</strong> establece seis atributos indispensables de toda métrica efectiva:
+                </p>
+                <ol>
+                  <li>Ser <strong>simple y calculable</strong> sin exigir tiempos o esfuerzos anormales.</li>
+                  <li>Ser <strong>empírica e intuitivamente persuasiva</strong> para el ingeniero.</li>
+                  <li>Ser <strong>consistente y objetiva</strong>, arrojando resultados sin ambigüedad.</li>
+                  <li>Mantener <strong>consistencia en el uso de unidades y dimensiones</strong>.</li>
+                  <li>Ser <strong>independiente del lenguaje de programación</strong>, basándose en estructura o diseño.</li>
+                  <li>Proveer <strong>mecanismos efectivos para la retroalimentación de alta calidad</strong>.</li>
+                </ol>
+
+                <h4>Taxonomía de Métricas en el Desarrollo de Software</h4>
+                <ul>
+                  <li><strong>Métricas para el modelo de análisis:</strong> Evalúan la funcionalidad entregada (como Puntos de Función), el tamaño general del sistema y la calidad/completitud de la especificación de requisitos.</li>
+                  <li><strong>Métricas para el modelo de diseño:</strong> Incluyen métricas arquitectónicas, métricas a nivel de componente (cohesión y acoplamiento), métricas de diseño de interfaz (usabilidad) y métricas especializadas en diseño orientado a objetos (clases, herencia, comunicación y colaboración).</li>
+                  <li><strong>Métricas para el código fuente:</strong> Miden la complejidad lógica (complejidad ciclomática) y la longitud o tamaño del código (líneas de código LOC, métricas de Halstead) para estimar mantenibilidad y facilidad de prueba.</li>
+                  <li><strong>Métricas para pruebas:</strong> Abarcan cobertura de instrucciones y ramas, métricas relacionadas con la densidad y hallazgo de defectos, efectividad de la prueba en tiempo real y métricas del proceso de pruebas.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- 1.5 -->
+            <details class="subtopic-block" id="tema-1-5">
+              <summary>1.5 Integración de Modelos de Madurez de Capacidades (CMMI)</summary>
+              <div class="subtopic-body">
+                <p>
+                  <strong>CMMI (<em>Capability Maturity Model Integration</em>)</strong> es un marco internacional de referencia y mejora de procesos desarrollado originalmente por el <strong>Software Engineering Institute (SEI)</strong> de la Universidad Carnegie Mellon (y administrado actualmente por ISACA). Su objetivo es integrar disciplinas de ingeniería de sistemas y software para eliminar silos organizacionales, reducir costos por retrabajo y garantizar entregas predecibles.
+                </p>
+                <p>
+                  CMMI se organiza en constelaciones especializadas —<strong>CMMI-DEV</strong> (Desarrollo), <strong>CMMI-SVC</strong> (Servicios) y <strong>CMMI-ACQ</strong> (Adquisición)— y ofrece dos formas de implementación: la <strong>representación continua</strong> (evalúa áreas de proceso individuales mediante niveles de capacidad del 0 al 3) y la <strong>representación por etapas</strong>, que clasifica la madurez global de toda la empresa en cinco niveles evolutivos:
+                </p>
+                <table class="info-table">
+                  <thead>
+                    <tr>
+                      <th>Nivel de Madurez</th>
+                      <th>Denominación</th>
+                      <th>Características y Áreas Clave</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>Nivel 1</strong></td>
+                      <td>Inicial</td>
+                      <td>Procesos impredecibles, reactivos y poco controlados (<em>ad hoc</em>). Los proyectos suelen exceder presupuesto y tiempo; el éxito depende del esfuerzo individual heroico.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Nivel 2</strong></td>
+                      <td>Gestionado</td>
+                      <td>Se establecen prácticas básicas de gestión por proyecto: Gestión de Requisitos (REQM), Planificación (PP), Monitoreo y Control (PMC), Aseguramiento de Calidad (PPQA) y Gestión de Configuración (CM).</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Nivel 3</strong></td>
+                      <td>Definido</td>
+                      <td>Los procesos están documentados, estandarizados e institucionalizados en toda la organización mediante un conjunto estándar adaptable a cada proyecto (Desarrollo de Requisitos, Solución Técnica, Integración, Verificación y Validación).</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Nivel 4</strong></td>
+                      <td>Gestionado Cuantitativamente</td>
+                      <td>La organización establece objetivos cuantitativos de calidad y desempeño del proceso, controlándolos mediante técnicas estadísticas (Control Estadístico de Procesos) y modelos de predicción.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Nivel 5</strong></td>
+                      <td>Optimizado</td>
+                      <td>Mejora continua e innovadora de los procesos basada en la comprensión cuantitativa de las causas comunes de variación, análisis causal y adopción sistemática de nuevas tecnologías.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+
+            <!-- 1.6 -->
+            <details class="subtopic-block" id="tema-1-6">
+              <summary>1.6 Determinación de la Capacidad de Mejora de Proceso de Software (SPICE)</summary>
+              <div class="subtopic-body">
+                <p>
+                  <strong>SPICE (<em>Software Process Improvement and Capability Determination</em>)</strong>, publicado formalmente como el estándar internacional <strong>ISO/IEC 15504</strong> y actualizado posteriormente hacia la familia normativa <strong>ISO/IEC 33000</strong>, es un marco de evaluación diseñado para diagnosticar la capacidad de los procesos de software de una organización, guiar programas internos de mejora continua y calificar proveedores.
+                </p>
+
+                <h4>Arquitectura Bidimensional de SPICE</h4>
+                <ul>
+                  <li><strong>Dimensión de Procesos:</strong> Define <em>qué</em> procesos se evalúan, agrupándolos en categorías funcionales: Cliente-Proveedor (CUS), Ingeniería (ENG), Soporte (SUP), Gestión (MAN) y Organización (ORG).</li>
+                  <li><strong>Dimensión de Capacidad:</strong> Evalúa <em>qué tan bien</em> se ejecuta cada proceso mediante una escala progresiva de <strong>seis niveles (0 a 5)</strong> respaldados por nueve Atributos de Proceso (PA):</li>
+                </ul>
+                <ol start="0">
+                  <li><strong>Nivel 0 — Proceso Incompleto:</strong> El proceso no está implementado o falla sistemáticamente en alcanzar su propósito definido.</li>
+                  <li><strong>Nivel 1 — Proceso Realizado (PA 1.1):</strong> El proceso implementado logra su propósito básico y genera los productos de trabajo esperados.</li>
+                  <li><strong>Nivel 2 — Proceso Gestionado (PA 2.1 y PA 2.2):</strong> La ejecución del proceso se planifica, monitorea y ajusta, y sus productos de trabajo se controlan y versionan formalmente.</li>
+                  <li><strong>Nivel 3 — Proceso Establecido (PA 3.1 y PA 3.2):</strong> Se ejecuta utilizando un proceso estándar definido y adaptado a nivel organizacional, con recursos y competencias asignadas.</li>
+                  <li><strong>Nivel 4 — Proceso Predecible (PA 4.1 y PA 4.2):</strong> El proceso opera dentro de límites cuantitativos y estadísticos definidos para asegurar resultados consistentes.</li>
+                  <li><strong>Nivel 5 — Proceso Optimizado (PA 5.1 y PA 5.2):</strong> El proceso se innova y optimiza continuamente para responder tanto a los objetivos actuales como a los proyectados del negocio.</li>
+                </ol>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <!-- UNIDAD 2 -->
+        <details class="unit-block" id="unidad-2">
+          <summary>2. Despliegue y Transición</summary>
+          <div class="unit-content">
+            <p class="unit-overview">
+              La etapa de <strong>Despliegue y Transición</strong> comprende el conjunto de actividades técnicas, operativas y organizacionales necesarias para trasladar un producto de software desde el ambiente controlado de desarrollo y pruebas hacia el entorno real de producción, garantizando la continuidad operativa del negocio, la capacitación de usuarios y la aceptación formal del sistema (alineado con la fase de <em>Transición</em> de RUP y la <em>Transición del Servicio</em> de ITIL).
+            </p>
+
+            <!-- 2.1 -->
+            <details class="subtopic-block" id="tema-2-1">
+              <summary>2.1 Versiones Alfa y Beta</summary>
+              <div class="subtopic-body">
+                <p>
+                  Antes de que un producto de software alcance su madurez comercial o liberación definitiva, atraviesa un ciclo progresivo de liberación controlada para depurar defectos y validar su comportamiento:
+                </p>
+                <ul>
+                  <li><strong>Versión Pre-Alfa:</strong> Compilaciones tempranas generadas durante la construcción activa; aún no contienen todas las funcionalidades especificadas y solo se someten a pruebas unitarias y de humo por los programadores.</li>
+                  <li><strong>Versión Alfa (<em>Alpha</em>):</strong> Primera versión funcional completa (o casi completa) que ingresa a pruebas internas dentro de la propia organización desarrolladora. Es evaluada por ingenieros de QA y personal interno en un entorno controlado mediante pruebas de caja blanca y caja negra para identificar fallos críticos, bloqueos (<em>crashes</em>) y problemas graves de lógica antes de exponer el software a usuarios externos.</li>
+                  <li><strong>Versión Beta:</strong> Etapa posterior a la fase alfa en la que el software se distribuye fuera de la organización desarrolladora hacia usuarios reales seleccionados (<strong>Beta cerrada</strong>) o al público general (<strong>Beta abierta</strong>). Su objetivo es validar el rendimiento, la compatibilidad y la usabilidad en entornos reales y heterogéneos de hardware, sistemas operativos, redes y volúmenes de datos reales, recabando telemetría y retroalimentación directa.</li>
+                  <li><strong>Versión Candidata a Liberación (<em>Release Candidate, RC</em>):</strong> Compilación posterior a la Beta que incorpora las correcciones de los hallazgos reportados y se considera potencialmente lista para ser la versión final, salvo que surja un defecto crítico de última hora.</li>
+                  <li><strong>Disponibilidad General / Liberación a Producción (<em>GA / RTM</em>):</strong> Versión definitiva aprobada para su distribución comercial o puesta en marcha oficial en producción.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- 2.2 -->
+            <details class="subtopic-block" id="tema-2-2">
+              <summary>2.2 Entregas</summary>
+              <div class="subtopic-body">
+                <p>
+                  La <strong>entrega (<em>Release / Delivery</em>)</strong> es el proceso formal de empaquetar, distribuir, instalar, configurar y poner en operación una versión aprobada del software en el entorno productivo del cliente.
+                </p>
+
+                <h4>Componentes de un Paquete de Entrega Profesional</h4>
+                <ul>
+                  <li><strong>Artefactos ejecutables y código desplegable:</strong> Instaladores, contenedores Docker, archivos JAR/WAR o paquetes compilados firmados digitalmente.</li>
+                  <li><strong>Scripts de base de datos y migración:</strong> Sentencias DDL/DML versionadas para crear o actualizar esquemas sin pérdida de integridad de datos.</li>
+                  <li><strong>Archivos de configuración y parámetros de entorno:</strong> Variables de conexión, certificados de seguridad y políticas de acceso separadas del código fuente.</li>
+                  <li><strong>Notas de versión (<em>Release Notes</em>):</strong> Resumen ejecutivo de nuevas funcionalidades, errores corregidos, limitaciones conocidas y requisitos de compatibilidad.</li>
+                  <li><strong>Documentación y plan de reversión (<em>Rollback</em>):</strong> Manual técnico de instalación/administración, manual de usuario y procedimiento probado para restaurar la versión anterior en caso de fallo crítico durante el despliegue.</li>
+                </ul>
+
+                <h4>Estrategias de Despliegue en Producción</h4>
+                <ul>
+                  <li><strong>Despliegue Directo (<em>Big Bang / Cutover</em>):</strong> Sustitución total e inmediata del sistema legado por el nuevo en una ventana de mantenimiento; es rápido y económico pero conlleva el mayor riesgo operativo.</li>
+                  <li><strong>Despliegue por Fases o Incremental:</strong> Liberación escalonada por módulos funcionales, departamentos o regiones geográficas para acotar el impacto de posibles incidentes.</li>
+                  <li><strong>Despliegue en Paralelo:</strong> Operación simultánea del sistema antiguo y el nuevo durante un periodo de validación cruzada hasta confirmar la exactitud de los resultados.</li>
+                  <li><strong>Despliegue <em>Blue-Green</em>:</strong> Mantiene dos entornos idénticos de producción (<em>Blue</em> activo y <em>Green</em> con la nueva versión); al validar <em>Green</em>, el balanceador redirige el tráfico instantáneamente con cero tiempo de inactividad.</li>
+                  <li><strong>Despliegue Canario (<em>Canary Release</em>):</strong> Libera la nueva versión inicialmente a un pequeño porcentaje de usuarios (por ejemplo, 5%) para monitorear métricas en tiempo real antes de extenderla al 100%.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <!-- UNIDAD 3 -->
+        <details class="unit-block" id="unidad-3">
+          <summary>3. Gestión de Configuración y Cambio</summary>
+          <div class="unit-content">
+            <p class="unit-overview">
+              La <strong>Gestión de la Configuración del Software (SCM / ACS)</strong> es una disciplina transversal de aseguramiento de calidad encargada de identificar, organizar, controlar y auditar sistemáticamente todos los cambios realizados sobre los artefactos de un sistema a lo largo de su ciclo de vida, evitando la pérdida de código, conflictos entre desarrolladores y regresiones no documentadas.
+            </p>
+
+            <details class="subtopic-block" id="tema-3-1">
+              <summary>3.1 Elementos, Líneas Base, Control de Versiones y Control de Cambios</summary>
+              <div class="subtopic-body">
+                <h4>1. Elementos de Configuración del Software (ECS / CI)</h4>
+                <p>
+                  Un <strong>Elemento de Configuración</strong> es cualquier unidad de información o artefacto generado durante el proyecto que debe someterse a control formal de versiones: documentos de requisitos (SRS), diagramas UML, código fuente, scripts SQL, archivos de configuración, casos de prueba, manuales y bibliotecas de terceros.
+                </p>
+
+                <h4>2. Líneas Base (<em>Baselines</em>)</h4>
+                <p>
+                  Una <strong>Línea Base</strong> es una especificación o producto de trabajo que ha sido revisado formalmente, aprobado y fijado como referencia estable para el desarrollo posterior. Una vez establecida una línea base (funcional, asignada o de producto), nadie puede modificarla arbitrariamente sin seguir el procedimiento formal de control de cambios.
+                </p>
+
+                <h4>3. Control de Versiones y Versionado Semántico</h4>
+                <p>
+                  Mediante sistemas distribuidos como <strong>Git</strong>, se mantiene un historial inmutable de revisiones, ramas de trabajo (estrategias como <em>GitFlow</em> o <em>Trunk-Based Development</em>) y etiquetas (<em>tags</em>) que permiten reconstruir cualquier estado previo del software. Para identificar cada liberación se emplea el estándar <strong>Versionado Semántico (SemVer)</strong> bajo el formato <code>MAYOR.MENOR.PARCHE</code> (por ejemplo, <code>v2.4.1</code>):
+                </p>
+                <ul>
+                  <li><strong>MAYOR (Major):</strong> Cambios arquitectónicos o de API incompatibles con versiones anteriores.</li>
+                  <li><strong>MENOR (Minor):</strong> Incorporación de nuevas funcionalidades compatibles hacia atrás.</li>
+                  <li><strong>PARCHE (Patch):</strong> Correcciones de errores (<em>bugfixes</em>) compatibles hacia atrás.</li>
+                </ul>
+
+                <h4>4. Proceso Formal de Control de Cambios</h4>
+                <ol>
+                  <li><strong>Solicitud de Cambio (RFC — <em>Request for Change</em>):</strong> Registro formal de la necesidad de modificación, su justificación y prioridad.</li>
+                  <li><strong>Evaluación Técnica y Análisis de Impacto:</strong> Estimación del esfuerzo, costos, riesgos, cronograma y artefactos afectados.</li>
+                  <li><strong>Dictamen del Comité de Control de Cambios (CCB):</strong> Órgano integrado por líderes técnicos, negocio y QA que aprueba, rechaza o pospone la solicitud.</li>
+                  <li><strong>Implementación y Verificación:</strong> Ejecución del cambio sobre una rama controlada, ejecución de pruebas de regresión y actualización de documentación.</li>
+                  <li><strong>Auditoría de Configuración y Reporte de Estado:</strong> Verificación funcional y física de que el cambio aprobado se integró correctamente en la nueva línea base.</li>
+                </ol>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <!-- UNIDAD 4 -->
+        <details class="unit-block" id="unidad-4">
+          <summary>4. Software Orientado al Servicio. Biblioteca de Infraestructura de Tecnologías de la Información (ITIL)</summary>
+          <div class="unit-content">
+            <p class="unit-overview">
+              El paradigma de <strong>Software Orientado al Servicio</strong> concibe las aplicaciones empresariales como servicios modulares, interoperables y reutilizables (como en la Arquitectura Orientada a Servicios, <strong>SOA</strong>, y microservicios) que entregan valor continuo al negocio. Para gobernar estos servicios de manera profesional, la industria adopta <strong>ITIL (<em>Information Technology Infrastructure Library</em>)</strong>, el marco de referencia internacional de mejores prácticas para la <strong>Gestión de Servicios de TI (ITSM)</strong>, estructurado en torno al ciclo de vida del servicio (Estrategia, Diseño, Transición, Operación y Mejora Continua) y formalizado mediante <strong>Acuerdos de Nivel de Servicio (SLA)</strong>.
+            </p>
+
+            <!-- 4.1 -->
+            <details class="subtopic-block" id="tema-4-1">
+              <summary>4.1 Garantías</summary>
+              <div class="subtopic-body">
+                <p>
+                  Dentro del marco conceptual de ITIL, el valor que un servicio de software entrega al cliente se fundamenta en la combinación inseparable de dos dimensiones:
+                </p>
+                <ul>
+                  <li><strong>Utilidad (<em>Utility</em> — Apto para el propósito):</strong> Se refiere a <em>qué hace</em> el servicio; es decir, la funcionalidad positiva que ofrece para mejorar el desempeño del cliente o eliminar restricciones operativas.</li>
+                  <li><strong>Garantía (<em>Warranty</em> — Apto para el uso):</strong> Se refiere a <em>cómo se entrega</em> el servicio; constituye la promesa formal de que el software operará con niveles adecuados de <strong>disponibilidad, capacidad, continuidad y seguridad</strong>.</li>
+                </ul>
+
+                <h4>Garantías Contractuales y Legales en el Desarrollo de Software</h4>
+                <p>
+                  Desde el punto de vista jurídico y comercial, la garantía de software es la cláusula contractual mediante la cual el proveedor asegura al cliente que el sistema funcionará conforme a las especificaciones funcionales y técnicas aprobadas durante un plazo determinado tras la firma del acta de entrega (habitualmente de 3 a 12 meses), obligándose a diagnosticar y corregir defectos de programación (<em>vicios ocultos o bugs</em>) sin costo adicional, siempre que el cliente no haya alterado el código fuente ni operado el sistema fuera de los requisitos de infraestructura pactados.
+                </p>
+              </div>
+            </details>
+
+            <!-- 4.2 -->
+            <details class="subtopic-block" id="tema-4-2">
+              <summary>4.2 Disponibilidad</summary>
+              <div class="subtopic-body">
+                <p>
+                  La <strong>Gestión de la Disponibilidad</strong> en ITIL es el proceso encargado de asegurar que los servicios de TI y las aplicaciones en operación cumplan con los niveles de disponibilidad acordados en los SLA de forma rentable. La disponibilidad se define como la capacidad de un servicio, aplicación o componente de infraestructura para desempeñar su función requerida en un instante o periodo determinado.
+                </p>
+
+                <h4>Fórmula e Indicadores Clave de Disponibilidad</h4>
+                <div class="formula-box">
+                  Disponibilidad (%) = [ (Tiempo Acordado de Servicio - Tiempo de Inactividad) / Tiempo Acordado de Servicio ] × 100
+                </div>
+                <ul>
+                  <li><strong>MTBF (<em>Mean Time Between Failures</em> — Tiempo Medio Entre Fallos):</strong> Mide la fiabilidad del sistema; indica el tiempo promedio que transcurre entre el inicio de un fallo y el inicio del siguiente.</li>
+                  <li><strong>MTTR (<em>Mean Time To Repair</em> — Tiempo Medio de Reparación):</strong> Mide la capacidad de recuperación; indica el tiempo promedio necesario para diagnosticar, reparar y restablecer el servicio tras una caída.</li>
+                  <li><strong>MTTF (<em>Mean Time To Failure</em> — Tiempo Medio Hasta el Fallo):</strong> Tiempo promedio de operación normal antes de que ocurra una interrupción.</li>
+                </ul>
+
+                <h4>Niveles de Alta Disponibilidad y Estrategias Técnicas</h4>
+                <table class="info-table">
+                  <thead>
+                    <tr>
+                      <th>Nivel de Disponibilidad</th>
+                      <th>Inactividad Máxima Anual</th>
+                      <th>Inactividad Máxima Mensual</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>99.0 % (Dos nueves)</strong></td>
+                      <td>3 días, 15 horas, 39 min</td>
+                      <td>7 horas, 18 min</td>
+                    </tr>
+                    <tr>
+                      <td><strong>99.9 % (Tres nueves)</strong></td>
+                      <td>8 horas, 45 min</td>
+                      <td>43 min, 49 seg</td>
+                    </tr>
+                    <tr>
+                      <td><strong>99.99 % (Cuatro nueves)</strong></td>
+                      <td>52 min, 35 seg</td>
+                      <td>4 min, 23 seg</td>
+                    </tr>
+                    <tr>
+                      <td><strong>99.999 % (Cinco nueves)</strong></td>
+                      <td>5 min, 15 seg</td>
+                      <td>26 segundos</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  Para alcanzar alta disponibilidad se implementan arquitecturas redundantes activo-activo o activo-pasivo, balanceadores de carga, replicación síncrona de bases de datos, monitoreo proactivo 24/7 y eliminación sistemática de <strong>Puntos Únicos de Fallo (SPOF)</strong>.
+                </p>
+              </div>
+            </details>
+
+            <!-- 4.3 -->
+            <details class="subtopic-block" id="tema-4-3">
+              <summary>4.3 Continuidad</summary>
+              <div class="subtopic-body">
+                <p>
+                  La <strong>Gestión de la Continuidad del Servicio de TI (ITSCM)</strong> respalda la Gestión de la Continuidad del Negocio (BCM) asegurando que las instalaciones técnicas, sistemas críticos, redes y bases de datos puedan recuperarse dentro de los plazos acordados tras la ocurrencia de un desastre grave o evento catastrófico (ciberataques de ransomware, incendios, terremotos, fallas eléctricas prolongadas o caída total de un centro de datos).
+                </p>
+
+                <h4>Métricas y Conceptos Fundamentales de Continuidad</h4>
+                <ul>
+                  <li><strong>Análisis de Impacto al Negocio (BIA — <em>Business Impact Analysis</em>):</strong> Estudio que identifica los procesos críticos de la organización y cuantifica el impacto financiero, operativo y legal que provoca su interrupción conforme avanza el tiempo.</li>
+                  <li><strong>RTO (<em>Recovery Time Objective</em> — Objetivo de Tiempo de Recuperación):</strong> Tiempo máximo tolerable que una aplicación o servicio puede permanecer fuera de línea tras un desastre antes de generar pérdidas inaceptables para el negocio.</li>
+                  <li><strong>RPO (<em>Recovery Point Objective</em> — Objetivo de Punto de Recuperación):</strong> Cantidad máxima tolerable de pérdida de datos medida en tiempo; determina la frecuencia con la que deben ejecutarse los respaldos o la replicación (por ejemplo, un RPO de 15 minutos exige respaldos o replicación cada 15 minutos).</li>
+                  <li><strong>Plan de Recuperación ante Desastres (DRP):</strong> Documento operativo probado periódicamente que detalla roles, cadenas de comunicación y procedimientos técnicos de conmutación ante fallos (<em>failover</em>) y retorno a la normalidad (<em>failback</em>).</li>
+                </ul>
+
+                <h4>Tipos de Sitios Alternos de Recuperación</h4>
+                <ul>
+                  <li><strong>Sitio Frío (<em>Cold Site</em>):</strong> Espacio físico con energía eléctrica y climatización básica, pero sin servidores ni datos preinstalados; económico, pero con RTO alto (días o semanas).</li>
+                  <li><strong>Sitio Templado (<em>Warm Site</em>):</strong> Infraestructura parcialmente equipada con servidores y enlaces de red listos que requieren cargar respaldos recientes de datos y aplicaciones; RTO intermedio (horas).</li>
+                  <li><strong>Sitio Caliente (<em>Hot Site</em>) / Nube Multi-Región:</strong> Réplica exacta y sincronizada en tiempo real del entorno de producción; permite conmutación casi inmediata con RTO y RPO cercanos a cero.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <!-- UNIDAD 5 -->
+        <details class="unit-block" id="unidad-5">
+          <summary>5. Infraestructura</summary>
+          <div class="unit-content">
+            <p class="unit-overview">
+              La <strong>Infraestructura Tecnológica</strong> constituye el ecosistema físico y lógico sobre el cual se desarrolla, integra, prueba, despliega y opera el software empresarial. Una arquitectura de infraestructura bien dimensionada determina la escalabilidad, latencia, seguridad y costo operativo de cualquier sistema de información.
+            </p>
+
+            <details class="subtopic-block" id="tema-5-1">
+              <summary>5.1 Componentes Físicos, Lógicos, Entornos y Modelos de Nube</summary>
+              <div class="subtopic-body">
+                <h4>1. Infraestructura Física (Hardware y Centro de Datos)</h4>
+                <ul>
+                  <li><strong>Cómputo y Virtualización:</strong> Servidores empresariales en rack o blade dotados de hipervisores (VMware ESXi, KVM, Hyper-V) que permiten consolidar múltiples máquinas virtuales aisladas sobre un mismo hardware físico.</li>
+                  <li><strong>Almacenamiento Empresarial:</strong> Arreglos de discos redundantes (RAID), redes de área de almacenamiento (<strong>SAN</strong> de bloques de alta velocidad) y almacenamiento conectado en red (<strong>NAS</strong> de archivos).</li>
+                  <li><strong>Redes y Seguridad Perimetral:</strong> Switches gestionables, routers de núcleo, balanceadores de carga, firewalls de próxima generación (NGFW), sistemas de detección/prevención de intrusiones (IDS/IPS) y enlaces redundantes de telecomunicaciones.</li>
+                  <li><strong>Instalaciones de Centro de Datos (Estándar TIA-942 Tiers I–IV):</strong> Sistemas de alimentación ininterrumpida (UPS), plantas generadoras de respaldo, climatización de precisión (HVAC), detección y extinción de incendios y control biométrico de acceso físico.</li>
+                </ul>
+
+                <h4>2. Infraestructura Lógica (Software Base y Middleware)</h4>
+                <ul>
+                  <li><strong>Sistemas Operativos de Servidor:</strong> Distribuciones empresariales de Linux (Red Hat Enterprise Linux, Ubuntu Server, Debian) y Windows Server.</li>
+                  <li><strong>Gestión de Datos:</strong> Sistemas Gestores de Bases de Datos Relacionales (PostgreSQL, Oracle, SQL Server, MySQL) y NoSQL (MongoDB, Redis).</li>
+                  <li><strong>Servidores Web, de Aplicaciones y Contenedores:</strong> Nginx, Apache HTTP Server, Tomcat, Node.js, así como motores de contenedores (<strong>Docker</strong>) y plataformas de orquestación (<strong>Kubernetes</strong>) para escalamiento automático.</li>
+                </ul>
+
+                <h4>3. Entornos del Ciclo de Vida del Software</h4>
+                <ul>
+                  <li><strong>Desarrollo (<em>Development</em>):</strong> Estaciones locales donde los programadores escriben y depuran código.</li>
+                  <li><strong>Pruebas / Calidad (<em>QA / Testing</em>):</strong> Ambiente aislado donde se ejecutan pruebas automatizadas de integración, rendimiento y seguridad.</li>
+                  <li><strong>Preproducción (<em>Staging</em>):</strong> Réplica fiel de la configuración y topología de producción utilizada para ensayos finales de despliegue y pruebas de aceptación.</li>
+                  <li><strong>Producción (<em>Production</em>):</strong> Entorno operativo vivo con acceso controlado donde los usuarios finales interactúan con el sistema real.</li>
+                </ul>
+
+                <h4>4. Modelos de Despliegue y Computación en la Nube</h4>
+                <ul>
+                  <li><strong>Modalidades de propiedad:</strong> Infraestructura local (<em>On-Premise</em>), Nube Pública (AWS, Microsoft Azure, Google Cloud), Nube Privada y Nube Híbrida.</li>
+                  <li><strong>Modelos de servicio:</strong> <strong>IaaS</strong> (<em>Infraestructura como Servicio</em>: redes, almacenamiento y máquinas virtuales), <strong>PaaS</strong> (<em>Plataforma como Servicio</em>: entornos de ejecución y bases de datos administradas) y <strong>SaaS</strong> (<em>Software como Servicio</em>: aplicaciones completas accesibles vía web).</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <!-- UNIDAD 6 -->
+        <details class="unit-block" id="unidad-6">
+          <summary>6. Otros Factores en la Ingeniería de Software</summary>
+          <div class="unit-content">
+            <p class="unit-overview">
+              Además de la excelencia técnica, el éxito comercial y operativo de la industria del software depende de factores jurídicos, regulatorios, financieros, organizacionales y de gestión del talento humano que gobiernan la producción y permanencia de los sistemas en el mercado.
+            </p>
+
+            <!-- 6.1 -->
+            <details class="subtopic-block" id="tema-6-1">
+              <summary>6.1 Legales y contratos</summary>
+              <div class="subtopic-body">
+                <h4>Propiedad Intelectual y Protección Jurídica en México</h4>
+                <p>
+                  En México, los programas de cómputo están protegidos por la <strong>Ley Federal del Derecho de Autor (LFDA)</strong> en los mismos términos que las obras literarias, registrándose ante el <strong>Instituto Nacional del Derecho de Autor (INDAUTOR)</strong>. Esta protección abarca tanto el código fuente y el código objeto como la documentación técnica y los manuales de usuario, distinguiendo entre los <em>derechos morales</em> (inalienables del autor) y los <em>derechos patrimoniales</em> (explotación económica, reproducción y distribución).
+                </p>
+
+                <h4>Modelos de Licenciamiento de Software</h4>
+                <ul>
+                  <li><strong>Software Propietario o Comercial:</strong> El titular conserva todos los derechos patrimoniales y otorga al usuario una licencia limitada de uso (por perpetuidad, suscripción o volumen de usuarios), prohibiendo la descompilación o redistribución.</li>
+                  <li><strong>Software Libre y de Código Abierto (<em>Open Source</em>):</strong> Permite estudiar, modificar y distribuir el código fuente bajo condiciones específicas:
+                    <ul>
+                      <li><em>Licencias permisivas (MIT, BSD, Apache 2.0):</em> Permiten incorporar el código en proyectos comerciales cerrados manteniendo los avisos de autoría.</li>
+                      <li><em>Licencias copyleft (GNU GPL, AGPL):</em> Exigen que cualquier obra derivada o redistribuida conserve exactamente la misma licencia abierta.</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h4>Contratos Fundamentales en la Industria del Software</h4>
+                <ul>
+                  <li><strong>Contrato de Desarrollo de Software a la Medida:</strong> Define alcance funcional, cronograma, entregables, hitos de pago, criterios de aceptación y la titularidad o cesión de derechos patrimoniales.</li>
+                  <li><strong>Acuerdo de Confidencialidad (NDA):</strong> Protege secretos industriales, algoritmos propietarios, bases de datos y estrategias comerciales intercambiadas entre las partes.</li>
+                  <li><strong>Acuerdo de Nivel de Servicio (SLA):</strong> Establece métricas vinculantes de disponibilidad, tiempos de respuesta ante incidentes y penalizaciones económicas por incumplimiento.</li>
+                  <li><strong>Cumplimiento de Protección de Datos Personales:</strong> Observancia de la <strong>LFPDPPP</strong> en México (avisos de privacidad, cifrado y resguardo de datos sensibles).</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- 6.2 -->
+            <details class="subtopic-block" id="tema-6-2">
+              <summary>6.2 Licitaciones públicas</summary>
+              <div class="subtopic-body">
+                <p>
+                  Una <strong>licitación pública</strong> es el procedimiento administrativo formal, transparente y competitivo mediante el cual las dependencias y entidades de la administración pública convocan a proveedores para contratar el desarrollo de sistemas, adquisición de licencias o servicios de TI, garantizando al Estado las mejores condiciones de precio, calidad, financiamiento y oportunidad (regulado en México por la <strong>LAASSP</strong> y operado a través de plataformas electrónicas como CompraNet).
+                </p>
+
+                <h4>Etapas del Proceso de Licitación Pública</h4>
+                <ol>
+                  <li><strong>Investigación de mercado y autorización presupuestal:</strong> La dependencia define la necesidad técnica y verifica la suficiencia de recursos.</li>
+                  <li><strong>Publicación de la Convocatoria y Bases:</strong> Documento rector que establece los requisitos legales, administrativos, técnicos, criterios de evaluación y calendario del concurso.</li>
+                  <li><strong>Junta de Aclaraciones:</strong> Sesión formal en la que los licitantes formulan preguntas técnicas o legales y la entidad convocante emite respuestas oficiales que modifican o precisan las bases.</li>
+                  <li><strong>Presentación y Apertura de Propuestas:</strong> Entrega formal dividida en dos apartados:
+                    <ul>
+                      <li><em>Propuesta Técnica:</em> Arquitectura propuesta, metodología de desarrollo, certificaciones (CMMI, ISO), currículum del equipo y plan de trabajo.</li>
+                      <li><em>Propuesta Económica:</em> Cotización desglosada por partidas, licencias, horas-hombre e impuestos.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Evaluación y Fallo:</strong> Análisis mediante criterio binario (cumple/no cumple) o de puntos y porcentajes para emitir el dictamen y adjudicar el contrato al licitante solvente más conveniente.</li>
+                  <li><strong>Formalización del Contrato y Fianzas:</strong> Firma del instrumento jurídico y entrega de pólizas de fianza para garantizar el cumplimiento oportuno y responder por defectos o vicios ocultos.</li>
+                </ol>
+              </div>
+            </details>
+
+            <!-- 6.3 -->
+            <details class="subtopic-block" id="tema-6-3">
+              <summary>6.3 Recursos Humanos</summary>
+              <div class="subtopic-body">
+                <p>
+                  La ingeniería de software es una industria intensiva en capital intelectual donde la competencia técnica, la comunicación y la cohesión del equipo determinan directamente la calidad del producto y la productividad del proyecto.
+                </p>
+
+                <h4>Roles Clave en un Equipo de Ingeniería de Software</h4>
+                <ul>
+                  <li><strong>Líder de Proyecto / Scrum Master:</strong> Gestiona riesgos, recursos, cronogramas y elimina impedimentos organizacionales del equipo.</li>
+                  <li><strong>Product Owner / Analista de Negocio:</strong> Traduce las necesidades de los interesados en requisitos priorizados y criterios de aceptación claros.</li>
+                  <li><strong>Arquitecto de Software:</strong> Define la estructura global del sistema, patrones arquitectónicos, pila tecnológica y atributos de calidad.</li>
+                  <li><strong>Desarrolladores (Frontend, Backend, Full-Stack):</strong> Implementan la lógica de negocio, interfaces de usuario e integraciones de servicios.</li>
+                  <li><strong>Administrador de Bases de Datos (DBA) e Ingeniero DevOps:</strong> Aseguran la integridad de los datos, la automatización de entregas (CI/CD) y la estabilidad de la infraestructura.</li>
+                  <li><strong>Ingeniero de QA / Testing:</strong> Diseña y ejecuta estrategias de verificación, validación y automatización de pruebas.</li>
+                </ul>
+
+                <h4>Factores Humanos y Dinámica Organizacional</h4>
+                <p>
+                  La gestión efectiva del talento contempla procesos rigurosos de reclutamiento técnico, planes de carrera, capacitación continua ante la rápida obsolescencia tecnológica y prevención del síndrome de desgaste profesional (<em>burnout</em>). Asimismo, reconoce principios clásicos como la <strong>Ley de Brooks</strong> (<em>"añadir más programadores a un proyecto de software retrasado lo retrasa aún más"</em> debido al crecimiento exponencial de los canales de comunicación).
+                </p>
+              </div>
+            </details>
+
+            <!-- 6.4 -->
+            <details class="subtopic-block" id="tema-6-4">
+              <summary>6.4 Outsourcing</summary>
+              <div class="subtopic-body">
+                <p>
+                  El <strong><em>Outsourcing</em> (subcontratación o tercerización de TI)</strong> es la estrategia empresarial mediante la cual una organización contrata a un proveedor externo especializado para ejecutar parcial o totalmente actividades de desarrollo, mantenimiento, pruebas o soporte de software.
+                </p>
+
+                <h4>Modalidades Geográficas y Operativas</h4>
+                <ul>
+                  <li><strong>Según ubicación geográfica:</strong>
+                    <ul>
+                      <li><em>Onshore:</em> El proveedor opera dentro del mismo país que la empresa contratante.</li>
+                      <li><em>Nearshore:</em> El proveedor se ubica en un país vecino o con huso horario y afinidad cultural similares (por ejemplo, empresas mexicanas brindando servicios de software a Estados Unidos y Canadá).</li>
+                      <li><em>Offshore:</em> El proveedor se encuentra en regiones distantes con diferencias horarias amplias y menores costos laborales.</li>
+                    </ul>
+                  </li>
+                  <li><strong>Según esquema contractual:</strong> <em>Staff Augmentation</em> (integración de especialistas externos al equipo interno), <em>Células Dedicadas</em> y <em>Proyectos Llave en Mano (Turnkey)</em> a precio fijo.</li>
+                </ul>
+
+                <h4>Ventajas Estratégicas vs. Riesgos</h4>
+                <ul>
+                  <li><strong>Ventajas:</strong> Reducción y variabilización de costos operativos, acceso inmediato a talento especializado escaso, escalabilidad rápida de capacidad productiva y enfoque de la empresa cliente en su actividad principal (<em>core business</em>).</li>
+                  <li><strong>Riesgos:</strong> Dependencia tecnológica del proveedor (<em>vendor lock-in</em>), fuga o pérdida de conocimiento institucional del negocio, barreras idiomáticas/culturales y riesgos de seguridad de la información, los cuales deben mitigarse mediante cláusulas de transferencia de conocimiento, auditorías y SLA rigurosos.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- 6.5 -->
+            <details class="subtopic-block" id="tema-6-5">
+              <summary>6.5 Fábrica de Software</summary>
+              <div class="subtopic-body">
+                <p>
+                  Una <strong>Fábrica de Software (<em>Software Factory</em>)</strong> es un modelo organizacional y de producción que traslada los principios de la ingeniería industrial —estandarización, especialización del trabajo, líneas de ensamblaje y reutilización sistemática— al desarrollo y mantenimiento de aplicaciones a gran escala.
+                </p>
+
+                <h4>Pilares Operativos de una Fábrica de Software</h4>
+                <ul>
+                  <li><strong>Separación entre especificación y producción:</strong> Equipos consultivos cercanos al cliente capturan y documentan los requisitos funcionales, mientras que células especializadas de producción ejecutan la codificación y pruebas siguiendo especificaciones estandarizadas.</li>
+                  <li><strong>Reutilización sistemática de activos:</strong> Empleo de arquitecturas base, marcos de trabajo corporativos, bibliotecas de componentes probados y plantillas de diseño para evitar reinventar soluciones comunes.</li>
+                  <li><strong>Automatización e Integración Continua (CI/CD):</strong> Uso intensivo de herramientas de análisis estático de código (SonarQube), pruebas unitarias automatizadas y despliegue continuo para garantizar calidad homogénea.</li>
+                  <li><strong>Gestión basada en métricas industriales:</strong> Estimación y control de productividad mediante unidades estandarizadas como <strong>Puntos de Función (IFPUG / COSMIC)</strong>, densidad de defectos por mil líneas de código y velocidad de entrega.</li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- 6.6 -->
+            <details class="subtopic-block" id="tema-6-6">
+              <summary>6.6 Mantenimiento de sistemas en operación</summary>
+              <div class="subtopic-body">
+                <p>
+                  El <strong>mantenimiento de software</strong> comprende todas las actividades de ingeniería ejecutadas después de que un sistema ha sido entregado y puesto en producción, con el propósito de corregir fallos, mejorar su desempeño o adaptarlo a nuevos requerimientos y entornos. Históricamente, esta fase absorbe entre el <strong>60 % y el 80 % del costo total del ciclo de vida</strong> de un sistema de información.
+                </p>
+
+                <h4>Taxonomía del Mantenimiento (Lientz y Swanson / Estándar IEEE 1219)</h4>
+                <ul>
+                  <li><strong>Mantenimiento Correctivo:</strong> Diagnóstico y reparación de defectos residuales (<em>bugs</em>) de lógica, diseño o codificación que se manifiestan durante la operación real del sistema.</li>
+                  <li><strong>Mantenimiento Adaptativo:</strong> Modificación del software para mantener su operatividad ante cambios en su entorno técnico o regulatorio (actualizaciones de sistemas operativos, versiones de motores de bases de datos, migración a la nube o reformas fiscales y legales).</li>
+                  <li><strong>Mantenimiento Perfectivo:</strong> Incorporación de nuevas funcionalidades solicitadas por los usuarios, optimización de tiempos de respuesta, mejoras en la interfaz y evolución del negocio.</li>
+                  <li><strong>Mantenimiento Preventivo (Reingeniería y Refactorización):</strong> Reestructuración interna del código fuente, actualización de dependencias obsoletas y mejora de la documentación sin alterar el comportamiento externo, con el fin de reducir la <strong>deuda técnica</strong> y facilitar futuras intervenciones.</li>
+                </ul>
+
+                <h4>Niveles de Soporte Operativo en Producción</h4>
+                <ul>
+                  <li><strong>Nivel 1 (Mesa de Ayuda / Service Desk):</strong> Atención inicial al usuario, registro de tickets, solución de dudas operativas y fallos conocidos.</li>
+                  <li><strong>Nivel 2 (Soporte Técnico Especializado):</strong> Análisis de registros (<em>logs</em>), consultas de diagnóstico en base de datos, ajustes de configuración y resolución de incidentes complejos.</li>
+                  <li><strong>Nivel 3 (Ingeniería de Mantenimiento):</strong> Intervención directa sobre el código fuente, desarrollo de parches y liberación de versiones correctivas.</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </details>
+
+        <!-- BIBLIOGRAFÍA -->
+        <section class="biblio-section" id="bibliografia">
+          <h3>Bibliografía y Cibergrafía</h3>
+          <ol class="biblio-list">
+            <li><strong>1.1 Calidad:</strong> Pressman, R. S. (2010). <em>Ingeniería del software: Un enfoque práctico</em> (7.ª ed., p. 45). McGraw-Hill. / Piattini, M., &amp; García, F. (2003). <em>Calidad en el desarrollo y mantenimiento del software</em>. Ra-Ma.</li>
+            <li><strong>1.2 Revisiones y auditorías:</strong> Sommerville, I. (2011). <em>Ingeniería de software</em> (9.ª ed.). Pearson Educación. / IEEE Std 1028-2008, <em>IEEE Standard for Software Reviews and Audits</em>.</li>
+            <li><strong>1.3 Tipos de Pruebas:</strong> Myers, G. J., Sandler, C., &amp; Badgett, T. (2011). <em>The Art of Software Testing</em> (3.ª ed., p. 87). John Wiley &amp; Sons. / Pressman, R. S. (2010). <em>Estrategias y técnicas de prueba de software</em> (p. 491).</li>
+            <li><strong>1.4 Mecanismos de calidad de software:</strong> Juran, J. M. (1992). <em>Juran on Quality by Design</em>. Free Press. / McCall, J. A., Richards, P. K., &amp; Walters, G. F. (1977). <em>Factors in Software Quality</em>. Rome Air Development Center. / Vega, V., et al. (2008). <em>Factores y métricas de calidad del software</em>. / Roche, J. M. (1994); Lethbridge, T. C. (2003); Ejiogu, L. O. (1991).</li>
+            <li><strong>1.5 CMMI:</strong> Software Engineering Institute (SEI). (2010). <em>CMMI for Development, Version 1.3</em> (p. 620). Carnegie Mellon University.</li>
+            <li><strong>1.6 SPICE:</strong> ISO/IEC 15504 / ISO/IEC 33000. <em>Information technology — Process assessment (SPICE)</em> (p. 69).</li>
+            <li><strong>2. Despliegue y transición:</strong> Osiatis. <em>Transición del Servicio en ITIL v3</em>: <a href="http://itilv3.osiatis.es/transicion_servicios_TI/procesos.php" target="_blank" rel="noopener">http://itilv3.osiatis.es/transicion_servicios_TI/procesos.php</a> / Kruchten, P. (2003). <em>The Rational Unified Process: An Introduction</em>.</li>
+            <li><strong>3. Gestión de configuración y cambio:</strong> Pressman, R. S. (2010). <em>Administración de la configuración del software</em> (p. 643). McGraw-Hill.</li>
+            <li><strong>4. ITIL (Garantías, Disponibilidad y Continuidad):</strong> AXELOS. <em>ITIL Foundation: Gestión de Servicios de TI</em>. / Osiatis. <em>Gestión de la Disponibilidad y Continuidad</em>: <a href="http://itil.osiatis.es/Curso_ITIL/Gestion_Servicios_TI/gestion_de_la_disponibilidad/introduccion_objetivos_gestion_de_la_disponibilidad/introduccion_objetivos_gestion_de_la_disponibilidad.php" target="_blank" rel="noopener">http://itil.osiatis.es/</a></li>
+            <li><strong>5. Infraestructura:</strong> Universidad Nacional de Salta (UNSA). <em>Hardware y Software: Infraestructura Tecnológica</em>: <a href="http://www.unsa.edu.ar/sigeco/archivos/semi_material/HardwareYSoftware2013.pdf" target="_blank" rel="noopener">http://www.unsa.edu.ar/sigeco/archivos/semi_material/HardwareYSoftware2013.pdf</a></li>
+            <li><strong>6. Otros factores en la ingeniería de software:</strong> Kendall, K. E., &amp; Kendall, J. E. (2011). <em>Análisis y diseño de sistemas</em> (8.ª ed.). Pearson Educación. / Lientz, B. P., &amp; Swanson, E. B. (1980). <em>Software Maintenance Management</em>. Addison-Wesley. / Ley Federal del Derecho de Autor (LFDA) y LAASSP (México).</li>
+          </ol>
+        </section>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <section class="widget">
+        <h3 class="widget-title">Acerca de mí</h3>
+        <ul class="profile-list">
+          <li><strong>Alumno:</strong> Raziel Eliud Sánchez Romero</li>
+          <li><strong>No. de Cuenta:</strong> 322063908-1</li>
+          <li><strong>Grupo:</strong> 1501</li>
+          <li><strong>Asignatura:</strong> Informática V. Industria del Software</li>
+          <li><strong>Carrera:</strong> Licenciatura en Informática</li>
+          <li><strong>Facultad:</strong> FES Cuautitlán Campo 4, UNAM</li>
+        </ul>
+      </section>
+
+      <section class="widget">
+        <h3 class="widget-title">Herramientas de estudio</h3>
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar tema o concepto (ej. McCall, CMMI, RTO)..." />
+        <div class="btn-group">
+          <button type="button" id="expandAllBtn" class="btn">Expandir todo</button>
+          <button type="button" id="collapseAllBtn" class="btn btn-secondary">Contraer todo</button>
+        </div>
+        <div id="searchStatus" class="search-status"></div>
+      </section>
+
+      <section class="widget">
+        <h3 class="widget-title">Índice del Temario</h3>
+        <ul class="index-list">
+          <li><a href="#unidad-1">1. Gestión de la Calidad</a></li>
+          <li><a href="#unidad-2">2. Despliegue y Transición</a></li>
+          <li><a href="#unidad-3">3. Gestión de Configuración y Cambio</a></li>
+          <li><a href="#unidad-4">4. Software Orientado al Servicio (ITIL)</a></li>
+          <li><a href="#unidad-5">5. Infraestructura</a></li>
+          <li><a href="#unidad-6">6. Otros Factores en la Ing. de Software</a></li>
+          <li><a href="#bibliografia">Bibliografía y Cibergrafía</a></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    Informática V. Industria del Software &bull; Raziel Eliud Sánchez Romero (322063908-1) &bull; Grupo 1501 &bull; FES Cuautitlán UNAM
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
